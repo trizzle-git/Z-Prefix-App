@@ -32,7 +32,7 @@ const UserList = () => {
   const newUserItems = [];
 
   useEffect(() => {
-    fetch(`http://localhost:8080/items/${user.id}`)
+    fetch(`https://ussf-z-prefix-robinson.herokuapp.com/items/${user.id}`)
         .then(res => res.json())
         .then(data => setUserItems(data))
   },[setUserItems, user.id]);
@@ -44,7 +44,7 @@ const UserList = () => {
   }
 
   const deleteItem = async () => {
-    await fetch(`http://localhost:8080/item/${item.id}`, {
+    await fetch(`https://ussf-z-prefix-robinson.herokuapp.com/item/${item.id}`, {
         method: "DELETE",
     })
     nav(`/user/${user.id}`)

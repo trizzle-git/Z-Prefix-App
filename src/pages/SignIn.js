@@ -18,7 +18,7 @@ export default function SignInSide() {
     setAuth(false);
 
     useEffect(() => {
-        fetch('http://localhost:8080/users/')
+        fetch('https://ussf-z-prefix-robinson.herokuapp.com/users/')
             .then(res => res.json())
             .then(data => setAllUsers(data))
       },[setAllUsers]);
@@ -33,7 +33,7 @@ export default function SignInSide() {
       };
 
     const handleLogin = async () => {
-        await fetch(`http://localhost:8080/login/`, {
+        await fetch(`https://ussf-z-prefix-robinson.herokuapp.com/login/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

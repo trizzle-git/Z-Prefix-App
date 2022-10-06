@@ -20,7 +20,7 @@ const SignUp = () => {
       };
 
     const addItem = async () => {
-        await fetch(`http://localhost:8080/user/`, {
+        await fetch(`https://ussf-z-prefix-robinson.herokuapp.com/user/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

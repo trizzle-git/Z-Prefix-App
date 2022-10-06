@@ -14,7 +14,7 @@ const VisitorList = () => {
   const nav = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:8080/items')
+    fetch('https://ussf-z-prefix-robinson.herokuapp.com/items')
         .then(res => res.json())
         .then(data => setAllItems(data))
   },[setAllItems]);

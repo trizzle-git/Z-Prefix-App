@@ -20,7 +20,7 @@ const AddItem = () => {
       };
 
     const addItem = async () => {
-        await fetch(`http://localhost:8080/item/`, {
+        await fetch(`https://ussf-z-prefix-robinson.herokuapp.com/item/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

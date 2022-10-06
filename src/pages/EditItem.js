@@ -19,7 +19,7 @@ const EditItem = () => {
       };
 
     const editItem = async () => {
-        await fetch(`http://localhost:8080/item/${item.id}`, {
+        await fetch(`https://ussf-z-prefix-robinson.herokuapp.com/item/${item.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
